@@ -89,7 +89,7 @@ def attempt_download(file, repo="ultralytics/yolov5", release="v7.0"):
     """Downloads a file from GitHub release assets or via direct URL if not found locally, supporting backup
     versions.
     """
-    from utils.general import LOGGER
+    from yolov5.utils.general import LOGGER
 
     def github_assets(repository, version="latest"):
         """Fetches GitHub repository release tag and asset names using the GitHub API."""
